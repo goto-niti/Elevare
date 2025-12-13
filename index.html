@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevare - Connect with Master Artisans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Elevare</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section active">
+        <div class="hero-content">
+            <h1>Experience Traditional Crafts<br>Like Never Before</h1>
+            <p>Connect with master artisans for workshops, demonstrations, and cultural experiences</p>
+            <a href="artisans.html" class="btn">Explore Artisans</a>
+        </div>
+    </section>
+
+    <section id="artisans" class="section">
+        <div class="content-wrapper">
+            <h2>Meet Our Artisans</h2>
+            <div class="artisans-grid">
+                <div class="artisan-card">
+                    <div class="artisan-img">🏺</div>
+                    <div class="artisan-info">
+                        <h3>Priya Sharma</h3>
+                        <p>Traditional pottery with 15 years of experience. Specializes in terracotta and wheel throwing techniques.</p>
+                        <span class="craft-tag">Pottery</span>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-img">🧵</div>
+                    <div class="artisan-info">
+                        <h3>Rajesh Kumar</h3>
+                        <p>Master weaver creating intricate textiles using traditional looms and natural dyes.</p>
+                        <span class="craft-tag">Weaving</span>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-img">🎨</div>
+                    <div class="artisan-info">
+                        <h3>Meera Patel</h3>
+                        <p>Madhubani painting artist preserving ancient folk art traditions through workshops.</p>
+                        <span class="craft-tag">Painting</span>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-img">🪵</div>
+                    <div class="artisan-info">
+                        <h3>Arjun Singh</h3>
+                        <p>Wood carving specialist with expertise in traditional architectural ornaments.</p>
+                        <span class="craft-tag">Wood Carving</span>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-img">💍</div>
+                    <div class="artisan-info">
+                        <h3>Lakshmi Devi</h3>
+                        <p>Jewelry making artisan teaching traditional metalworking and stone setting techniques.</p>
+                        <span class="craft-tag">Jewelry</span>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-img">🖌️</div>
+                    <div class="artisan-info">
+                        <h3>Vikram Reddy</h3>
+                        <p>Calligraphy and manuscript illumination expert reviving ancient writing arts.</p>
+                        <span class="craft-tag">Calligraphy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+        <div class="content-wrapper">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Artisans</h3>
+                    <p>Explore our diverse collection of master artisans and their unique crafts. Filter by location, craft type, or availability.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Book Experience</h3>
+                    <p>Choose your preferred date and time. Select from workshops, live demonstrations, or private sessions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Secure Payment</h3>
+                    <p>Complete your booking with our secure payment system. Transparent pricing with no hidden fees.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Learn & Create</h3>
+                    <p>Attend your session and learn directly from master artisans. Take home your creation and newfound skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content-wrapper">
+            <h2>Get In Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an option</option>
+                            <option value="workshop">Attending a Workshop</option>
+                            <option value="event">Booking for an Event</option>
+                            <option value="artisan">Joining as an Artisan</option>
+                            <option value="corporate">Corporate Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="success-message" id="successMessage">
+                    <h3>Thank you for reaching out!</h3>
+                    <p>We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elevare. Empowering artisans, preserving traditions, connecting cultures.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
