@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Pilot Phase Banner -->
+    <div class="pilot-banner">
+        🚀 Currently in Pilot Phase – Launching Soon
+    </div>
+
     <nav class="nav">
         <div class="logo">Elevare</div>
         <ul class="nav-links">
@@ -17,10 +22,10 @@
         </ul>
     </nav>
 
-    <section class="section active contact-page">
+    <section class="section contact-page">
         <div class="content-wrapper">
             <h2>Get In Touch</h2>
-            <p style="text-align: center; font-size: 1.1rem; max-width: 700px; margin: 0 auto 3rem; color: #666;">
+            <p style="text-align: center; font-size: 1.15rem; max-width: 700px; margin: 0 auto 3rem; color: #4a5568; line-height: 1.8;">
                 Have questions? Want to join as an artisan? Or looking to book for a corporate event? We'd love to hear from you!
             </p>
 
@@ -60,36 +65,37 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">Phone Number *</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="interest">I'm Interested In</label>
+                            <label for="interest">I'm Interested In *</label>
                             <select id="interest" name="interest" required>
                                 <option value="">Select an option</option>
-                                <option value="workshop">Attending a Workshop</option>
-                                <option value="event">Booking for an Event</option>
-                                <option value="artisan">Joining as an Artisan</option>
+                                <option value="waitlist">Joining the Waitlist</option>
                                 <option value="corporate">Corporate Partnership</option>
+                                <option value="artisan">Joining as an Artisan</option>
+                                <option value="event">Booking for an Event</option>
+                                <option value="workshop">Attending a Workshop</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us more about your interest..."></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                     <div class="success-message" id="successMessage">
-                        <h3>Thank you for reaching out!</h3>
+                        <h3>✓ Thank you for reaching out!</h3>
                         <p>We'll get back to you within 24 hours.</p>
                     </div>
                 </div>
@@ -97,8 +103,69 @@
         </div>
     </section>
 
+    <!-- Why Contact Us Section -->
+    <section style="padding: 80px 8%; background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);">
+        <div class="content-wrapper">
+            <h2>Why Partner With Elevare?</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🤝</div>
+                    <h3>For Artisans</h3>
+                    <p>Join our platform to access premium markets and earn fair compensation</p>
+                    <ul>
+                        <li>No middlemen</li>
+                        <li>Direct bookings</li>
+                        <li>Professional support</li>
+                    </ul>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">🏢</div>
+                    <h3>For Corporates</h3>
+                    <p>Unique team-building and CSR opportunities with authentic cultural experiences</p>
+                    <ul>
+                        <li>Custom workshops</li>
+                        <li>Verified artisans</li>
+                        <li>Social impact</li>
+                    </ul>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">🎉</div>
+                    <h3>For Event Planners</h3>
+                    <p>Add authentic cultural elements to make your events unforgettable</p>
+                    <ul>
+                        <li>Live demonstrations</li>
+                        <li>Interactive booths</li>
+                        <li>Professional delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Elevare. Empowering artisans, preserving traditions, connecting cultures.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Elevare</h3>
+                <p>Empowering artisans, preserving traditions, connecting cultures.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artisans.html">Artisans</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@elevare.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Elevare. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
