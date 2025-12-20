@@ -22,7 +22,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1; /* Very transparent - adjust between 0.05-0.15 as needed */
+    opacity: 0.5; /* Very transparent - adjust between 0.05-0.15 as needed */
     z-index: 0;
 }
 
@@ -587,6 +587,7 @@
         height: 350px;
     }
 }
+
 
 
 
