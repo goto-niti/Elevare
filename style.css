@@ -118,7 +118,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    opacity: 0.15; /* LOW OPACITY */
+    opacity: 0.40; /* LOW OPACITY */
     z-index: 0;
 }
 .hero-section::before {
@@ -951,6 +951,7 @@ footer {
         font-size: 4rem;
     }
 }
+
 
 
 
