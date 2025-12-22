@@ -1,28 +1,3 @@
-// Navigation functionality
-const navLinks = document.querySelectorAll('.nav-links a, .btn');
-const sections = document.querySelectorAll('.section');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetPage = link.getAttribute('data-page');
-        
-        // Remove active class from all sections
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-        
-        // Add active class to target section
-        document.getElementById(targetPage).classList.add('active');
-        
-        // Smooth scroll to top
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-});
-
 // Contact form submission
 const contactForm = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
@@ -85,4 +60,5 @@ bookButtons.forEach(button => {
     button.addEventListener('click', () => {
         alert('Booking feature coming soon! This will redirect to the booking page.');
     });
+
 });
