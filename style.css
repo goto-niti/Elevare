@@ -156,6 +156,7 @@ body {
     color: #1a1a2e;
     line-height: 1.2;
     animation: fadeInUp 0.8s ease;
+    opacity: 1;
 }
 
 .hero-content p {
@@ -163,6 +164,7 @@ body {
     margin-bottom: 2.5rem;
     color: #4a5568;
     animation: fadeInUp 0.8s ease 0.2s backwards;
+    opacity: 1;
 }
 
 .hero-buttons {
@@ -951,6 +953,7 @@ footer {
         font-size: 4rem;
     }
 }
+
 
 
 
