@@ -185,6 +185,19 @@ body {
     opacity: 1 !important;
     color: #1a1a2e;
 }
+/* Allow clicks through hero background layers */
+.hero-section::before,
+.hero-section::after {
+    pointer-events: none;
+}
+
+/* Ensure buttons receive clicks */
+.hero-buttons a {
+    pointer-events: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
 
 .btn {
     display: inline-block;
@@ -969,6 +982,7 @@ footer {
         font-size: 4rem;
     }
 }
+
 
 
 
