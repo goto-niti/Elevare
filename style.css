@@ -107,8 +107,20 @@ body {
     background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
     position: relative;
     overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
-
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("Elevare logo.jpeg"); /* your image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.15; /* LOW OPACITY */
+    z-index: 0;
+}
 .hero-section::before {
     content: '';
     position: absolute;
@@ -939,6 +951,7 @@ footer {
         font-size: 4rem;
     }
 }
+
 
 
 
