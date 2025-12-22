@@ -173,10 +173,17 @@ body {
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
 .hero-content {
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.85);
     padding: 2.5rem;
     border-radius: 20px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
+}
+.hero-content h1,
+.hero-content p,
+.hero-content span,
+.hero-content a {
+    opacity: 1 !important;
+    color: #1a1a2e;
 }
 
 .btn {
@@ -962,6 +969,7 @@ footer {
         font-size: 4rem;
     }
 }
+
 
 
 
