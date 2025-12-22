@@ -982,6 +982,48 @@ footer {
         font-size: 4rem;
     }
 }
+/* DARK THEME – Midnight Indigo */
+body {
+    background: #0f1224;
+    color: #f1f5ff;
+}
+
+.nav {
+    background: rgba(15, 18, 36, 0.95);
+}
+
+.hero-section,
+.problem-section,
+.cta-section {
+    background: linear-gradient(135deg, #161a3a, #0f1224);
+}
+
+.why-section,
+.how-section,
+.founder-section {
+    background: #0f1224;
+}
+
+.why-card,
+.step,
+.audience-card,
+.artisan-card,
+.contact-info,
+.contact-form {
+    background: #161a3a;
+    color: #f1f5ff;
+}
+
+.subtitle,
+.hero-content p,
+.problem-text p {
+    color: #b8c1ff;
+}
+
+footer {
+    background: #0b0e1f;
+}
+
 
 
 
