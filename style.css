@@ -172,6 +172,12 @@ body {
     gap: 1.5rem;
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
+.hero-content {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 2.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
 
 .btn {
     display: inline-block;
@@ -953,6 +959,7 @@ footer {
         font-size: 4rem;
     }
 }
+
 
 
 
