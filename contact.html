@@ -22,90 +22,117 @@
         </ul>
     </nav>
 
-    <section class="section contact-page">
-        <div class="content-wrapper">
-            <h2>Get In Touch</h2>
-            <p style="text-align: center; font-size: 1.15rem; max-width: 700px; margin: 0 auto 3rem; color: #4a5568; line-height: 1.8;">
-                Have questions? Want to join as an artisan? Or looking to book for a corporate event? We'd love to hear from you!
-            </p>
+  <section class="section contact-page">
+    <div class="content-wrapper">
+        <h2>Get In Touch</h2>
+        <p style="text-align: center; font-size: 1.15rem; max-width: 700px; margin: 0 auto 3rem; color: #4a5568; line-height: 1.8;">
+            Have questions? Want to join as an artisan? Or looking to book for a corporate event?
+            We'd love to hear from you!
+        </p>
 
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@elevare.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 98765 43210</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>123 Heritage Lane<br>Mumbai, Maharashtra 400001</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div>
-                            <h4>Business Hours</h4>
-                            <p>Monday - Saturday<br>9:00 AM - 6:00 PM IST</p>
-                        </div>
+        <div class="contact-container">
+            <!-- LEFT: CONTACT INFO -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@elevare.com</p>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <!-- modify this form HTML and place wherever you want your form -->
-                <form
-                   action="https://formspree.io/f/xpqakvvd"
-                   method="POST"
-                 <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="interest">I'm Interested In *</label>
-                            <select id="interest" name="interest" required>
-                                <option value="">Select an option</option>
-                                <option value="waitlist">Joining the Waitlist</option>
-                                <option value="corporate">Corporate Partnership</option>
-                                <option value="artisan">Joining as an Artisan</option>
-                                <option value="event">Booking for an Event</option>
-                                <option value="workshop">Attending a Workshop</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" required placeholder="Tell us more about your interest..."></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                    <div class="success-message" id="successMessage">
-                        <h3>✓ Thank you for reaching out!</h3>
-                        <p>We'll get back to you within 24 hours.</p>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>
+                            123 Heritage Lane<br>
+                            Mumbai, Maharashtra 400001
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>
+                            Monday – Saturday<br>
+                            9:00 AM – 6:00 PM IST
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <div class="contact-form">
+                <form
+                    id="contactForm"
+                    action="https://formspree.io/f/xpqakvvd"
+                    method="POST"
+                >
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an option</option>
+                            <option value="waitlist">Joining the Waitlist</option>
+                            <option value="corporate">Corporate Partnership</option>
+                            <option value="artisan">Joining as an Artisan</option>
+                            <option value="event">Booking for an Event</option>
+                            <option value="workshop">Attending a Workshop</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                            placeholder="Tell us more about your interest..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <h3>✓ Thank you for reaching out!</h3>
+                    <p>We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Why Contact Us Section -->
     <section style="padding: 80px 8%; background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);">
@@ -175,5 +202,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
