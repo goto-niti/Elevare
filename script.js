@@ -3,33 +3,33 @@ const contactForm = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form values
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value,
-            interest: document.getElementById('interest').value,
-            message: document.getElementById('message').value
-        };
-        
-        // Log form data (in production, this would be sent to a server)
-        console.log('Form submitted with data:', formData);
-        
-        // Hide form and show success message
-        contactForm.style.display = 'none';
-        successMessage.style.display = 'block';
-        
-        // Reset form and show it again after 3 seconds
-        setTimeout(() => {
-            contactForm.reset();
-            contactForm.style.display = 'block';
-            successMessage.style.display = 'none';
-        }, 3000);
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); // stop redirect
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                contactForm.reset();
+                contactForm.style.display = 'none';
+                successMessage.style.display = 'block';
+            } else {
+                alert("Oops! Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            alert("Network error. Please try again later.");
+        }
     });
 }
+
 
 // Smooth animation for cards on scroll
 const observerOptions = {
@@ -62,3 +62,4 @@ bookButtons.forEach(button => {
     });
 
 });
+
