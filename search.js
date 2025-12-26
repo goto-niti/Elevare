@@ -7,7 +7,10 @@ const craftFilter = document.getElementById('craftFilter');
 const locationFilter = document.getElementById('locationFilter');
 const experienceFilter = document.getElementById('experienceFilter');
 const priceFilter = document.getElementById('priceFilter');
-const artisanCards = document.querySelectorAll('.artisan-card');
+function filterArtisans() {
+  const artisanCards = document.querySelectorAll('.artisan-card');
+  ...
+}
 
 // Function to filter artisans
 function filterArtisans() {
@@ -127,4 +130,5 @@ if (document.querySelector('.search-section')) {
 
 }
 });
+
 
