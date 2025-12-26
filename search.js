@@ -1,3 +1,4 @@
+console.log("search.js loaded");
 document.addEventListener('DOMContentLoaded', () => {
 // Search and filter functionality
 const searchInput = document.getElementById('searchInput');
@@ -126,3 +127,4 @@ if (document.querySelector('.search-section')) {
 
 }
 });
+
