@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 // Search and filter functionality
 const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
@@ -122,4 +123,6 @@ function addResetButton() {
 // Initialize
 if (document.querySelector('.search-section')) {
     addResetButton();
+
 }
+});
